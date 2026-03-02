@@ -1,119 +1,203 @@
-<!--
-檔名建議：PrivacyPolicy.md
-用途：可直接貼到 GitHub（README / Repo / GitHub Pages）
--->
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>充電瓦數估算（QingTsaiWatt）隱私權政策</title>
+  <style>
+    :root{
+      --text:#1f2937;
+      --muted:#6b7280;
+      --bg:#ffffff;
+      --card:#f9fafb;
+      --border:#e5e7eb;
+      --accent:#2563eb;
+      --shadow: 0 8px 24px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box}
+    body{
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "PingFang TC", "Noto Sans TC", sans-serif;
+      line-height: 1.75;
+      padding: 40px 18px;
+      max-width: 920px;
+      margin: auto;
+      color: var(--text);
+      background: var(--bg);
+    }
+    header{
+      margin-bottom: 22px;
+    }
+    h1,h2{
+      font-weight: 700;
+      letter-spacing: .2px;
+    }
+    h1{
+      font-size: 28px;
+      margin: 0 0 10px 0;
+    }
+    .meta{
+      color: var(--muted);
+      margin: 0;
+    }
+    .badge{
+      display:inline-block;
+      padding: 6px 10px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      font-size: 13px;
+      color: var(--muted);
+      background: #fff;
+      margin: 10px 8px 0 0;
+    }
+    .card{
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 16px;
+      margin: 18px 0 26px 0;
+      box-shadow: var(--shadow);
+    }
+    .card strong{color: var(--text)}
+    .toc{
+      margin: 0;
+      padding-left: 18px;
+    }
+    .toc a{
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .toc a:hover{ text-decoration: underline; }
+    h2{
+      margin-top: 34px;
+      font-size: 21px;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+    }
+    p{ margin: 12px 0; }
+    ul{ padding-left: 20px; margin: 10px 0; }
+    li{ margin: 8px 0; }
+    code{
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-size: .95em;
+      background: #fff;
+      border: 1px solid var(--border);
+      padding: 2px 6px;
+      border-radius: 8px;
+    }
+    .note{
+      border-left: 4px solid var(--accent);
+      padding: 10px 12px;
+      background: #fff;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      margin: 12px 0;
+    }
+    footer{
+      margin-top: 36px;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--border);
+      padding-top: 16px;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --text:#e5e7eb;
+        --muted:#9ca3af;
+        --bg:#0b1220;
+        --card:#0f172a;
+        --border:#243044;
+        --accent:#60a5fa;
+        --shadow:none;
+      }
+      .badge, code, .note{ background: #0b1220; }
+    }
+  </style>
+</head>
+<body>
 
-# 隱私權政策（Privacy Policy）
+<header>
+  <h1>隱私權政策（Privacy Policy）</h1>
+  <p class="meta"><strong>適用應用程式：</strong>充電瓦數估算（QingTsaiWatt）</p>
+  <p class="meta"><strong>生效日期：</strong>2026 年 3 月 2 日</p>
 
-![App](https://img.shields.io/badge/App-QingTsaiWatt-4A90E2)
-![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey)
-![Privacy](https://img.shields.io/badge/Privacy-Local%20Only-success)
+  <span class="badge">Local Only</span>
+  <span class="badge">No Account</span>
+  <span class="badge">No Upload</span>
+</header>
 
-> **適用應用程式：充電瓦數估算（QingTsaiWatt）**  
-> **生效日期：2026 年 3 月 2 日**  
-> **產品名稱：Power 青菜電（以下稱「本 App」）**
+<section class="card" aria-label="摘要">
+  <p><strong>Power 青菜電</strong>（以下稱「本 App」）重視您的隱私。本政策說明本 App 的資料蒐集、使用、儲存與管理方式。</p>
+  <div class="note">
+    <strong>重點：</strong>本 App 以本機運作為主，資料不會自動上傳至開發者伺服器，也不與第三方分享。
+  </div>
 
----
+  <p><strong>目錄</strong></p>
+  <ol class="toc">
+    <li><a href="#data-collect">我們蒐集哪些資料</a></li>
+    <li><a href="#local-storage">本機儲存資料</a></li>
+    <li><a href="#transfer-thirdparty">資料傳輸與第三方分享</a></li>
+    <li><a href="#permissions">權限使用</a></li>
+    <li><a href="#manage-delete">您可如何管理資料</a></li>
+    <li><a href="#updates">政策更新</a></li>
+    <li><a href="#contact">聯絡方式</a></li>
+  </ol>
+</section>
 
-## 快速摘要（TL;DR）
+<h2 id="data-collect">1. 我們蒐集哪些資料</h2>
 
-| 項目 | 本 App 作法 |
-|---|---|
-| 是否蒐集個資 | ❌ 不蒐集（姓名/電話/Email/位置） |
-| 是否建立帳號 | ❌ 不建立 |
-| 是否上傳資料 | ❌ 不上傳 |
-| 是否分享第三方 | ❌ 不分享 |
-| 是否有廣告/分析 SDK | ❌ 目前未整合 |
-| 資料儲存位置 | ✅ 僅本機（UserDefaults） |
+<p>本 App <strong>不會蒐集可直接識別您身分的個人資料</strong>（例如姓名、電話、電子郵件、位置）。</p>
 
-> [!NOTE]
-> 本 App 以「本機使用」為核心：資料不會自動傳送至開發者伺服器。
+<p>本 App 僅會在裝置上讀取功能所需的系統資訊，例如：</p>
+<ul>
+  <li><strong>電池電量百分比</strong>（Battery Level）</li>
+  <li><strong>充電狀態</strong>（Battery State）</li>
+  <li><strong>裝置型號識別碼</strong>（例如 <code>iPhone17,3</code>）</li>
+</ul>
 
----
+<h2 id="local-storage">2. 本機儲存資料</h2>
 
-## 目錄
-- [1. 我們蒐集哪些資料](#1-我們蒐集哪些資料)
-- [2. 本機儲存資料](#2-本機儲存資料)
-- [3. 資料傳輸與第三方分享](#3-資料傳輸與第三方分享)
-- [4. 權限使用](#4-權限使用)
-- [5. 您可如何管理資料](#5-您可如何管理資料)
-- [6. 政策更新](#6-政策更新)
-- [7. 聯絡方式](#7-聯絡方式)
+<p>為提供量測與紀錄功能，本 App 會把下列資料儲存在您的裝置本機（<code>UserDefaults</code>）：</p>
+<ul>
+  <li><strong>量測紀錄</strong>（開始/結束時間、電量變化、估算瓦數、校正係數）</li>
+  <li><strong>使用者設定</strong>（例如校正係數）</li>
+</ul>
 
----
+<div class="note">
+  <strong>說明：</strong>上述資料<strong>不會自動上傳</strong>至開發者伺服器。
+</div>
 
-## 1. 我們蒐集哪些資料
+<h2 id="transfer-thirdparty">3. 資料傳輸與第三方分享</h2>
 
-本 App **不會蒐集可直接識別您身分的個人資料**（例如姓名、電話、電子郵件、位置）。
+<ul>
+  <li>本 App <strong>不建立使用者帳號</strong>。</li>
+  <li>本 App <strong>不提供資料上傳功能</strong>。</li>
+  <li>本 App <strong>不會將您的資料出售、出租或提供給第三方</strong>。</li>
+  <li>本 App 目前<strong>未整合第三方廣告或第三方分析 SDK</strong>。</li>
+</ul>
 
-本 App 僅會在裝置上讀取功能所需的系統資訊，例如：
+<h2 id="permissions">4. 權限使用</h2>
 
-- **電池電量百分比**（Battery Level）
-- **充電狀態**（Battery State）
-- **裝置型號識別碼**（例如 `iPhone17,3`）
+<p>本 App 主要使用 iOS 提供的電池狀態相關公開 API，<strong>不需要</strong>聯絡人、照片、麥克風、相機或定位等權限。</p>
 
----
+<h2 id="manage-delete">5. 您可如何管理資料</h2>
 
-## 2. 本機儲存資料
+<p>您可以透過以下方式管理或刪除資料：</p>
+<ul>
+  <li>在 App 內使用<strong>「清除紀錄」</strong>功能刪除量測紀錄。</li>
+  <li>刪除本 App，以移除本機儲存的所有資料。</li>
+</ul>
 
-為提供量測與紀錄功能，本 App 會把下列資料儲存在您的裝置本機（`UserDefaults`）：
+<h2 id="updates">6. 政策更新</h2>
 
-- **量測紀錄**（開始/結束時間、電量變化、估算瓦數、校正係數）
-- **使用者設定**（例如校正係數）
+<p>本隱私權政策可能因功能調整而更新。若有重大變更，將於新版本中一併公告。</p>
 
-> [!IMPORTANT]
-> 上述資料 **不會自動上傳** 至開發者伺服器。
+<h2 id="contact">7. 聯絡方式</h2>
 
----
+<p>若您對本政策有任何疑問，請使用開發者公開的聯絡方式與我們聯絡。</p>
 
-## 3. 資料傳輸與第三方分享
+<footer>
+  <div>© 2026 QingTsaiWatt. All rights reserved.</div>
+</footer>
 
-- 本 App **不建立使用者帳號**
-- 本 App **不提供資料上傳功能**
-- 本 App **不會將您的資料出售、出租或提供給第三方**
-- 本 App **目前未整合第三方廣告或第三方分析 SDK**
-
-> [!TIP]
-> 若未來整合第三方 SDK，將同步更新本政策並於新版本公告。
-
----
-
-## 4. 權限使用
-
-本 App 主要使用 iOS 提供的電池狀態相關公開 API，**不需要** 以下權限：
-
-- 聯絡人
-- 照片
-- 麥克風
-- 相機
-- 定位
-
----
-
-## 5. 您可如何管理資料
-
-您可以透過以下方式管理或刪除資料：
-
-- 在 App 內使用 **「清除紀錄」** 功能刪除量測紀錄
-- **刪除本 App**，以移除本機儲存的所有資料
-
----
-
-## 6. 政策更新
-
-本隱私權政策可能因功能調整而更新。若有重大變更，將於新版本中一併公告。
-
----
-
-## 7. 聯絡方式
-
-若您對本政策有任何疑問，請使用開發者公開的聯絡方式與我們聯絡。
-
----
-
-<details>
-<summary>版本紀錄（點開）</summary>
-
-- **2026-03-02**：首次發布
-
-</details>
+</body>
+</html>
